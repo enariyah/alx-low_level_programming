@@ -1,6 +1,7 @@
+/* do you want it here */
 #include <stdio.h>
-
-int main(void)
+/* discription */
+int main(void) /* another one */
 {
 	puts("\"Programming is like building a multilingual puzzle");
 		return (0);
