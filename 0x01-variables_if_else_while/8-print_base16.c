@@ -5,7 +5,7 @@
  * description: prints all the numbers of base 16 in lowercase
  * Return: always zero
  */
-int main()
+int main(void)
 {
 	int num = 0;
 	char lett = 'a';
