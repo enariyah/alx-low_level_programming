@@ -10,18 +10,22 @@ int main(void)
 	int a;
 	int b;
 
-	for (a = 0; a < 100; a++)
+	for (a = 48; a <= 57; a++)
 	{
-		for (b = 0; b < 10; b++)
+		for (b = 49; b <= 57; b++)
 		{
-			putchar((a % 10) + '0');
-			putchar((b % 10) + '0');
-			if (a == 9 && b == 9)
-				continue;
-			putchar(',');
-			putchar(' ');
+			if (b > a)
+			{
+			putchar(a);
+			putchar(b);
+			if (a != 56 || b != 57)
+			{
+			putchar(44);
+			putchar(32);
+			}
+			}
 		}
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
