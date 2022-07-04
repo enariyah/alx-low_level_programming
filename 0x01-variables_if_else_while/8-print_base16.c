@@ -10,12 +10,12 @@ int main()
 	int num = 0;
 	char lett = 'a';
 
-	while(num < 10)
+	while (num < 10)
 	{
 		putchar((num % 10) + '0');
 		num++;
 	}
-	while(lett <= 'f')
+	while (lett <= 'f')
 	{
 		putchar(lett);
 		lett++;
