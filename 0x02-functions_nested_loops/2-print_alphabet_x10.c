@@ -1,3 +1,6 @@
+/**
+ * function main.h
+ */
 #include "main.h"
 /**
  * main - entery here alphabet 10x
