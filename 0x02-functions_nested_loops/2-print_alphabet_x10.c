@@ -1,8 +1,9 @@
 #include "main.h"
 /**
  * main - entery here alphabet 10x
+ *
  * description: print alphabets 10x
- * Return: zero
+ * Return: 0
  */
 void print_alphabet_x10(void)
 {
@@ -11,9 +12,9 @@ void print_alphabet_x10(void)
 
 	while (b <= 10)
 	{
-		b++;
+	b++;
 	for (a = 'a'; a <= 'z'; a++)
-			_putchar(a);
+	_putchar(a);
 	_putchar('\n');
 	}
 }
