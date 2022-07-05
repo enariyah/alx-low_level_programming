@@ -1,12 +1,10 @@
-/*
- * File: 2-print_alphabet_x10.c
- * Auth: hopmike
- */
+
 #include "main.h"
 /**
- * main - entery here alphabet 10x
+ * main - entery point
  *
- * description: print alphabets 10x
+ * Description: print lower case alphabets 10x
+ *
  * Return: 0
  */
 void print_alphabet_x10(void)
