@@ -8,6 +8,7 @@
 void print_array(int *a, int n)
 {
 	int ba;
+
 	for (ba = 0; ba < n; ba++)
 	{
 		if (ba == 0)
