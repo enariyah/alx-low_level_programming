@@ -5,7 +5,6 @@
  * @name: First member
  * @age: Second member
  * @owner: Third member
- *
  * Description: this struct function is used to store name, age and owner
  */
 struct dog
