@@ -19,13 +19,13 @@ int main(int ac, char **av)
 	fd_from = open(av[1], O_RDONLY);
 	r = read(fd_from, buff, 1024);
 	fd_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (fd_from == -1 || r == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
-		exit(98);
-	}
 	while (r > 0)
 	{
+		if (fd_from == -1 || r == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
+			exit(98);
+		}
 		w = write(fd_to, buff, r);
 		if (w == -1 || fd_to == -1)
 		{
