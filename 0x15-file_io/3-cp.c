@@ -16,8 +16,11 @@ int main(int ac, char **av)
 		exit(97);
 	}
 	buff = malloc(sizeof(char) * 1024);
-	if (buff == NULL);
-	exit(98);
+	if (buff == NULL)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", av[1]);
+		exit(98);
+	}
 	fd_from = open(av[1], O_RDONLY);
 	r = read(fd_from, buff, 1024);
 	fd_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
