@@ -16,6 +16,8 @@ int main(int ac, char **av)
 		exit(97);
 	}
 	buff = malloc(sizeof(char) * 1024);
+	if (buff == NULL);
+	return;
 	fd_from = open(av[1], O_RDONLY);
 	r = read(fd_from, buff, 1024);
 	fd_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
