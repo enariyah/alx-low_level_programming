@@ -16,7 +16,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || key == NULL || (strcmp(key, "") == 0))
 		return (0);
-	index = key_index((unsigned char*) key, ht->size);
+	index = key_index((unsigned char *) key, ht->size);
 	et = ht->array[index];
 	if (et && strcmp(key, et->key) == 0)
 	{
