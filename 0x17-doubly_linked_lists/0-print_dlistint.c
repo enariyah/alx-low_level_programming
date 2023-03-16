@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_dlistint - fuction prints doubly linked lis
+ * print_dlistint - fuction prints doubly linked list
  * @h: pointer to the head file
  * Return: number of nodes
  */
